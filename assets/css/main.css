@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1703,13 +1697,13 @@ input, select, textarea {
 	height: 2px;
 	border: 1px solid rgba(0,0,0,0.3);
 	border-radius: 3px;
-	box-shadow: 0 0 10px #2187e7b3;
+	box-shadow: 0 0 10px #82ccdd;
 }
 
 .bar span{ /*style the span tag*/
 	height: 2px;
 	float: left;
-	background-color: #2187e7;
+	background-color: #82ccdd;
 }
 
 /* animation */
