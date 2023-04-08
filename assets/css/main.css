@@ -1630,28 +1630,53 @@ input, select, textarea {
 			}
 
 		}
-		
 /* button */
-.btn {
-    text-decoration: none;
-    padding-top: 20%;
-    padding-bottom: 10%;
-}
-
-.btn a {
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    background: #333;
-    padding: 18px 30px;
-    border-radius: 6px;
-    transition: .3s;
-    text-decoration: none;
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+	margin: 10%;
   }
-  .btn a:hover {
-    opacity: 0.6;
-    text-decoration: none;
+  
+  a {
+	font-size: 13px;
+	padding: 1rem 3rem;
+	color: #f4f4f4;
+	text-transform: uppercase;
   }
+  
+  .btn {
+	text-decoration: none;
+	border: 1px solid rgb(130,204,221);
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .btn:hover {
+	box-shadow: 1.5px 1.5px 25px 10px rgba(130,204,221, 0.4);
+  }
+  
+  .btn:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+	  120deg,
+	  transparent,
+	  rgba(146, 148, 248, 0.4),
+	  transparent
+	);
+	transition: all 650ms;
+  }
+  
+  .btn:hover:before {
+	left: 100%;
+  }
+	
 
 		
 /* bar */
@@ -1662,9 +1687,7 @@ input, select, textarea {
 	color: #fff;
 }
 
-.skills h3{ /*style the text*/
-	text-align: left;
-}
+
 .skills li span{ /*style the text*/
 	text-align: right;
 }
@@ -1914,6 +1937,7 @@ input, select, textarea {
 	margin-bottom: 30px;
 	margin-top: 16px;
 	transition: 0.3s linear;
+	align-items: center;
   }
   .service-icon i{
 	line-height: 70px;
@@ -1989,4 +2013,4 @@ input, select, textarea {
 
 		body.is-preload #footer {
 			opacity: 0;
-		}
+		}		  
